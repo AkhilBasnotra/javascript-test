@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="todo-header">To-Do List</div>
+    </header>
+    <section>
+      <div class="add-todo">
+        <label for="todo">Todo Name</label>
+        <input type="text" id="todo-name" placeholder="Add a new to-do" />
+
+        <label for="description">Description</label>
+        <input type="text" id="description" />
+
+        <button id="btn" class="add-todo button">Add Item</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="todo-container">
+        <h1>Todos Remaining</h1>
+        <ul class="addedTodos"></ul>
+      </div>
+    </section>
+
+    <section class="todo-done">
+      <div class="done-todos">
+        <h1>Todos done</h1>
+        <ul class="donetodo"></ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
